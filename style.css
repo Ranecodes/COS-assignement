@@ -4,6 +4,14 @@
     box-sizing: border-box;
     font-family: 'Arial' sans-serif;
 }
+
+.container{
+    padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
 .navbar{
     width:100%;
     background-color: lightblue;
@@ -54,13 +62,16 @@ body{
     background-color: #f0f0f0;
 }
 .card-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+}
+.card{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 100px;
-}
-.card{
-    width: 325px;
+    
+    
     background-color: #f0f0f0;
     border-radius: 8px;
     overflow: hidden;
@@ -69,8 +80,16 @@ body{
  }
  .card img{
     width: 100%;
-    height: auto;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #10a37f;
  }
+
+.card-section{
+    display: flex;
+    flex-direction: column;
+}
+
  .card-content{
     padding:16px
 }
